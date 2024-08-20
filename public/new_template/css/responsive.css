@@ -1,0 +1,90 @@
+
+@media (max-width: 992px) {
+    .box-info-job {
+        padding: 70px 30px 36px 80px !important;
+    }
+    .box-newsletter {
+        padding: 57px 50px 96px 50px !important;
+    }
+    .job-filter-page{
+        flex-direction: column-reverse !important;
+    }
+   
+
+}
+
+@media (max-width: 768px) {
+    .burger-icon.burger-close {
+        top: 23px;
+    }
+    .box-newsletter .box-form-newsletter form {
+        display: block;
+        padding: 10px 10px 10px 0;
+    }
+    .box-newsletter .box-form-newsletter form input{
+        margin: 8px 0 !important;
+    }
+    .box-newsletter .text-lg-newsletter {
+        font-size: 19px;
+        line-height: 27px;
+        margin-bottom: 15px;
+    }
+    .banner-home-3 .banner-hero .block-banner {
+        padding-right: 0;
+    }
+
+
+}
+@media (max-width: 576px) {
+    .banner-hero .block-banner .form-find form input {
+        margin: 0 !important;
+        margin-bottom: 15px !important;
+    }
+    .swiper-group-6 {
+        max-height: none;
+    }
+    .section-title{
+        font-size: 25px;
+    }
+    .box-info-job {
+        padding: 10px !important;
+    }
+    .box-newsletter .text-md-newsletter{
+        margin-bottom: 15px;
+    }
+    .banner-hero .heading-banner {
+        font-size: 37px;
+    }
+    .banner-home-3::before, .banner-home-3::after {
+        opacity: 0 !important;
+    }
+    .heading-image-rd {
+        float: auto;
+        width: 100%;
+        margin-right: auto;
+        text-align: center;
+    }
+    .heading-main-info {
+        display: block;
+        padding-left: initial;
+        text-align: center;
+    }
+    .job-single-header h3{
+        font-size: 27px;
+    }
+
+}
+@media (max-width: 390px) {
+    .mobile-header-wrapper-style {
+        width: 100%
+    }
+    .box-newsletter .text-md-newsletter {
+        font-size: 35px;
+    }
+    .login-text{
+        font-size: 15px;
+    }
+  
+
+
+}
