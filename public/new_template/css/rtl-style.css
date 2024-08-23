@@ -263,3 +263,7 @@ body {
 margin-right: auto !important;
 
 }
+.menu-sidebar
+{
+    float:right !important;
+}

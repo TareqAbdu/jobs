@@ -195,6 +195,92 @@ body{
     font-weight: 600;
     line-height: 14px;
 }
+
+.bg-auth {
+  padding: 40px 0;
+  background-color: rgba(var(--bs-primary-rgb), 0.1);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 100vh;
+}
+@media (max-width: 991.98px) {
+  .bg-auth {
+    padding: 60px 0;
+  }
+}
+
+.auth-box {
+  border: none;
+  -webkit-box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+          box-shadow: 0px 3px 10px 0px rgba(40, 48, 57, 0.08);
+  border-radius: 10px;
+  overflow: hidden;
+}
+.auth-box .auth-content {
+  background-color: #d71a21;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+}
+.auth-box .logo-dark {
+  display: inline-block;
+  width: 50px;
+}
+.auth-box .logo-light {
+  display: none;
+}
+.auth-box .auth-form .form-control {
+  color: #fff;
+  border-color: rgba(255, 255, 255, 0.1);
+  background-color: rgba(255, 255, 255, 0.1);
+}
+.auth-box .auth-form .form-control::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: rgba(255, 255, 255, 0.45);
+}
+.auth-box .auth-form .form-control::-moz-placeholder { /* Firefox 19+ */
+  color: rgba(255, 255, 255, 0.45);
+}
+.auth-box .auth-form .form-control:-ms-input-placeholder { /* IE 10+ */
+  color: rgba(255, 255, 255, 0.45);
+}
+.auth-box .auth-form .form-control:-moz-placeholder { /* Firefox 18- */
+  color: rgba(255, 255, 255, 0.45);
+}
+.welcome
+{
+	color:white !important;
+}
+.btn-white
+{
+	background-color: white !important;
+}
+.loginsocial
+{
+	color: white;
+	font-size: 20px;
+	padding-bottom: 10px;
+}
+.social-icons a
+{
+	color:white;
+	padding: 3px;
+	font-size: 20px;
+}
 </style>
 @endpush
 <section class="section-box bg-banner-about banner-home-3 pages contact  pt-3 mb-35">
@@ -222,60 +308,77 @@ body{
 </section>
 
 
-<div class="candidate-login">
+<!-- START SIGN-IN -->
+<section class="bg-auth">
     <div class="container">
-        <div class="screen">
-            <div class="screen__content">
-                @include('flash::message')
+        <div class="row justify-content-center">
+            <div class="col-xl-10 col-lg-12">
+                <div class="card auth-box">
+                    <div class="row g-0">
+                        <div class="col-lg-6 text-center">
+                            <div class="card-body p-4">
+                             
+                                <div class="mt-5">
+                                    <img src="{{asset('new_template/imgs/theme/undraw_personal_email_re_4lx7.svg')}}" alt="" class="img-fluid">
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                        <div class="col-lg-6">
+                            <div class="auth-content card-body p-5 h-100 text-white">
+                                <div class="w-100">
+                                    <div class="text-white-70 text-center mb-4">
+                                        <h5 class="welcome">{{__('Welcome Back!')}}</h5>
+                                        <p class="text-white-70">{{__('Sign in to continue to Jobaaty.')}}</p>
+                                    </div>
+                                    <form action="{{ route('login') }}" method="POST" class="auth-form">
+                                        {{ csrf_field() }}
+                                        <input type="hidden" name="candidate_or_employer" value="candidate" />
+                                        <div class="mb-3{{ $errors->has('email') ? ' has-error' : '' }}">
+                                            <label for="email" class="form-label">{{__('Email Address')}}</label>
+                                            <input type="email" class="form-control" id="email" name="email" value="{{ old('email') }}" required autofocus>
+                                            @if ($errors->has('email'))
+                                            <div class="text-white">
+                                                {{ $errors->first('email') }}
+                                            </div>
+                                            @endif
+                                        </div>
+                                        <div class="mb-3{{ $errors->has('password') ? ' has-error' : '' }}">
+                                            <label for="password" class="form-label">{{__('Password')}}</label>
+                                            <input type="password" class="form-control" id="password" name="password" required>
+                                            @if ($errors->has('password'))
+                                            <div class="text-white">
+                                                {{ $errors->first('password') }}
+                                            </div>
+                                            @endif
+                                        </div>
+                                        <div class="mb-4">
+											<a href="{{ route('password.request') }}" class="float-end text-white">{{__('Forgot Password')}}</a>
 
-                <form class="login" class="form-horizontal" method="POST" action="{{ route('login') }}">
-                    {{ csrf_field() }}
-                    <input type="hidden" name="candidate_or_employer" value="candidate" />
-
-                    <div class="login__field{{ $errors->has('email') ? ' has-error' : '' }}">
-                        <i class="login__icon fas fa-user"></i>
-                        <input type="email" class="login__input" name="email" value="{{ old('email') }}" required autofocus placeholder="{{__('Email Address')}}">
-                        @if ($errors->has('email'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('email') }}</strong>
-                        </span>
-                        @endif
-                    </div>
-                    <div class="login__field{{ $errors->has('password') ? ' has-error' : '' }}">
-                        <i class="login__icon fas fa-lock"></i>
-                        <input type="password" class="login__input" type="password"  name="password" value="" required placeholder="{{__('Password')}}">
-                        @if ($errors->has('password'))
-                        <span class="help-block">
-                            <strong>{{ $errors->first('password') }}</strong>
-                        </span>
-                        @endif
-                    </div>
-                    <button class="button login__submit" type="submit">
-                        <span class="button__text">{{__('Login')}}</span>
-                        <i class="button__icon fas fa-chevron-right"></i>
-                    </button>		
-                    <div class="mb-3 text-direct"><i class="fas fa-lock" aria-hidden="true"></i> {{__('Forgot Your Password')}}? <a href="{{ route('password.request') }}">{{__('Click here')}}</a></div>          
-                    <div class="newuser text-direct"><i class="fa fa-user" aria-hidden="true"></i> {{__('New User')}}? <a href="{{route('candidate_register')}}">{{__('Register Here')}}</a></div>
-               
-                </form>
-                
-                <div class="social-login">
-                    <h3 style="font-size: 16px;">{{__('Login with Social')}}</h3>
-                    <div class="social-icons">
-                        <a  href="{{ url('login/jobseeker/facebook')}}"  class="social-login__icon fab fa-facebook"></a>
-                        <a href="{{ url('login/jobseeker/twitter')}}" class="social-login__icon fab fa-twitter"></a>
-                    </div>
-                </div>
-            </div>
-            <div class="screen__background">
-                <span class="screen__background__shape screen__background__shape4"></span>
-                <span class="screen__background__shape screen__background__shape3"></span>		
-                <span class="screen__background__shape screen__background__shape2"></span>
-                <span class="screen__background__shape screen__background__shape1"></span>
-            </div>		
-        </div>
-    </div>
-</div>
+                                        </div>
+                                        <div class="text-center">
+                                            <button type="submit" class="btn btn-white btn-hover w-100">{{__('Login')}}</button>
+                                        </div>
+                                    </form>
+                                    <div class="mt-4 text-center">
+                                        <p class="mb-0">{{__('Dont have an account')}}? <a href="{{ route('candidate_register') }}" class="fw-medium text-white text-decoration-underline">{{__('Register Here')}}</a></p>
+                                    </div>
+                                    <div class="mt-4 text-center">
+                                        <h3 class="loginsocial">{{__('Login with Social')}}</h3>
+                                        <div class="social-icons">
+                                            <a href="{{ url('login/jobseeker/facebook') }}" class="social-login__icon fab fa-facebook"></a>
+                                            <a href="{{ url('login/jobseeker/twitter') }}" class="social-login__icon fab fa-twitter"></a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div><!--end col-->
+                    </div><!--end row-->
+                </div><!--end auth-box-->
+            </div><!--end col-->
+        </div><!--end row-->
+    </div><!--end container-->
+</section>
+<!-- END SIGN-IN -->
 
 
 @endsection

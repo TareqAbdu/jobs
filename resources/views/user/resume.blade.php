@@ -353,42 +353,6 @@ if(null!==($package)){
        </div>
    </section>
 
-   <section class="bg-funfact section-md">
-       <div class="container">
-           <div class="row justify-content-center text-center" id="counter">
-               <div class="col-sm-4 digit-counter">
-                   <div class="media">
-                       <i class="uil uil-cell text-warning mr-2 align-self-center"></i>
-                       <div class="media-body align-self-center">
-                           <h3 class="mb-1"><span class="counter-value project" data-count="0">0</span>+</h3>
-                           <h5 class="counter-name mt-0"> {{ __('Projects') }}</h5>
-                       </div>
-                   </div><!--end media-->
-               </div>
-               <div class="col-sm-4 digit-counter">
-                   <div class="media">
-                       <i class="uil uil-smile text-success mr-2 align-self-center"></i>
-                       <div class="media-body align-self-center">
-                           <h3 class="mb-1">{{ $user->getJobExperience('job_experience') }}</h3>
-                           <h5 class="counter-name mt-0">{{ __('Experience') }}</h5>
-                       </div>
-                   </div> <!--end media-->
-               </div>
-               <div class="col-sm-4 digit-counter">
-                   <div class="media">
-                       <i class="uil uil-trophy text-pink mr-2 align-self-center"></i>
-                       <div class="media-body align-self-center">
-                           <h3 class="mb-1"> {{ $user->getCareerLevel('career_level') }}</h3>
-                           <h5 class="counter-name mt-0">{{ __('Career Level') }}</h5>
-                       </div>
-                   </div><!--end media-->
-               </div>
-           </div>
-       </div>
-   </section>
-
-
-
    <section class="section-md my-work">
        <div class="container">
            <div class="row">

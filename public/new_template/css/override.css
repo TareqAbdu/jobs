@@ -334,7 +334,7 @@ a.wit-btn {
   }
   .tp-banner-container .block-banner .form-find .select2 .select2-selection__arrow b {
     display: none !important;
-    background-color: #9777fa;
+    background-color: #d71a21;
   }
   .tp-banner-container .block-banner .form-find .input-keysearch {
     background: url(../imgs/theme/icons/icon-job.svg) no-repeat left 18px center;
@@ -630,7 +630,7 @@ a.wit-btn {
 	border: 1px solid #DDD;
     border-radius: 15px;
 	padding:10px 0;
-	background: #9777fa;
+	background: #d71a21;
 }
 
 .usernavwrap li{
@@ -711,8 +711,8 @@ a.wit-btn {
     position: relative;
     inset: 20px;
     width: 80px;
-    background: #8e6df1;
-    border-left: 10px solid #8e6df1;
+    background: #d71a21;
+    border-left: 10px solid #d71a21;
     border-radius: 50px;
     box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
     /* transition: 0.3s; */
@@ -747,7 +747,7 @@ a.wit-btn {
 	width: 25px;
 	height: 3px;
 	border-radius: 3px;
-	background: #8e6df1;
+	background: #d71a21;
 	transform: translateY(-5px);
 	/* transition: 0.3s; */
   }
@@ -758,7 +758,7 @@ a.wit-btn {
 	width: 25px;
 	height: 3px;
 	border-radius: 3px;
-	background: #8e6df1;
+	background: #d71a21;
 	transform: translateY(5px);
 	/* transition: 0.3s; */
   }
@@ -826,7 +826,7 @@ a.wit-btn {
   }
   
   .user-menu .navigation ul li:hover a ,  .user-menu .navigation ul li.active a {
-	color: #8e6df1;
+	color: #d71a21;
   }
   
   .user-menu .navigation ul li a .icon {
@@ -851,6 +851,91 @@ a.wit-btn {
 	text-align: start;
 	white-space: nowrap;
   }
+
+  /* إخفاء النقل وعرض الزر فقط على الشاشات الصغرة (الهواتف المحمولة) */
+@media (max-width: 768px) {
+	.menu-sidebar
+	{
+		width: 0;
+	}
+	.user-content
+	{
+		width: 100%;
+	}
+    .user-menu .navigation {
+        position: fixed;
+        top: 0;
+        left: -100%; /* إخفا القائمة خارج الشاشة */
+        width: 80%;
+        max-width: 300px;
+        height: 100%;
+        background: #d71a21;
+        border-left: 10px solid #d71a21;
+        border-radius: 0;
+        padding: 15px 0;
+        transition: left 0.3s ease; /* تأثير انزلاق سلس */
+        z-index: 1000;
+        box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.05);
+    }
+
+    /* عند تفعيل القائمة عل الهاتف */
+    .user-menu .navigation.active {
+        left: 0; /* إظهار القامة عند الضغط على لزر */
+    }
+
+    /* إظهار زر التبديل فق على الشاشات الصغيرة */
+    .user-menu .toggle {
+        display: flex;
+        position: fixed;
+        top: 20px;
+        left: 20px;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        background: #d71a21;
+        color: #fff;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        z-index: 1100;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+    }
+
+    /* إخفا زر التبديل على ششات الكمبيوتر */
+    .user-menu .toggle::before, .user-menu .toggle::after {
+        content: '';
+        position: absolute;
+        width: 25px;
+        height: 3px;
+        background: #fff;
+        border-radius: 3px;
+    }
+
+    .user-menu .toggle::before {
+        transform: translateY(-5px);
+    }
+
+    .user-menu .toggle::after {
+        transform: translateY(5px);
+    }
+
+    /* عند تفعيل القائة (تغيير رمز الزر إلى X) */
+    .user-menu .navigation.active .toggle::before {
+        transform: translateY(0px) rotate(45deg);
+    }
+
+    .user-menu .navigation.active .toggle::after {
+        transform: translateY(0px) rotate(-45deg);
+    }
+
+	.user-menu .navigation.active .toggle {
+        left: auto;
+        right: 17%; /* انقل الزر إلى ليمين */
+    }
+}
+
+
+
 
 
 

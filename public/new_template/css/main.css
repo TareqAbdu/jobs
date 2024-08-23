@@ -218,10 +218,10 @@ input:focus::-moz-placeholder {
 }
 
 a {
-  color: #9777fa;
+  color: #d71a21;
 }
 a:hover {
-  color: #7856dd;
+  color: #d8181f;
 }
 
 li.hr span {
@@ -234,16 +234,16 @@ li.hr span {
 
 /*--- Common Classes---------------------*/
 ::-moz-selection {
-  background: #9777fa; /* WebKit/Blink Browsers */
+  background: #d71a21; /* WebKit/Blink Browsers */
   color: #fff;
 }
 ::selection {
-  background: #9777fa; /* WebKit/Blink Browsers */
+  background: #d71a21; /* WebKit/Blink Browsers */
   color: #fff;
 }
 
 ::-moz-selection {
-  background: #9777fa; /* Gecko Browsers */
+  background: #d71a21; /* Gecko Browsers */
   color: #fff;
 }
 
@@ -386,7 +386,7 @@ body {
   transform: translateY(-50%);
   left: 15px;
   font-size: 18px;
-  color: #88929b;
+  color: #ffffff;
 }
 
 .form-icons {
@@ -510,12 +510,12 @@ a {
 .dropdown .dropdown-menu.show .dropdown-item.active {
   color: #fff;
   text-decoration: none;
-  background-color: #9777fa;
+  background-color: #d71a21;
 }
 .dropdown .dropdown-menu.show .dropdown-item:active {
   color: #fff;
   text-decoration: none;
-  background-color: #9777fa;
+  background-color: #d71a21;
 }
 .dropdown.dropdown-sort .dropdown-menu.show {
   border-radius: 10px;
@@ -714,7 +714,7 @@ h6 {
 }
 
 .text-brand {
-  color: #9777fa;
+  color: #d71a21;
 }
 
 .font-3xs {
@@ -775,12 +775,14 @@ h6 {
 }
 .btn.btn-default {
   color: #ffffff;
-  background-color: #9777fa;
+  font-size: 15px;
+  background-color: #d71a21;
 }
 .btn.btn-default:hover {
-  background-color: #6d4bd3;
+  background-color: #d71a21;
   transform: translateY(-2px);
   transition: 0.2s;
+  color: white;
 }
 
 .btn-grey-small {
@@ -795,7 +797,7 @@ h6 {
   content: "";
   height: 5px;
   width: 5px;
-  background-color: #9777fa;
+  background-color: #d71a21;
   border-radius: 50%;
   display: inline-block;
   margin: 0px 5px 2px 0px;
@@ -828,7 +830,7 @@ h6 {
 }
 .btn-border:hover {
   color: #ffffff;
-  background-color: #9777fa;
+  background-color: #d71a21;
   transition-duration: 0.2s;
   transform: translateY(-3px);
 }
@@ -854,7 +856,7 @@ h6 {
 }
 
 .btn-brand-hover:hover {
-  background-color: #9777fa;
+  background-color: #d71a21;
   color: #ffffff;
 }
 
@@ -863,7 +865,7 @@ h6 {
   display: inline-block;
 }
 .box-button-shadow::before {
-  background: #9777fa;
+  background: #d71a21;
   filter: blur(20px);
   border-radius: 10px;
   content: "";
@@ -891,7 +893,7 @@ h6 {
   text-decoration: none;
 }
 .btn-link:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 
 .icon-chevron-right {
@@ -926,7 +928,7 @@ h6 {
 
 .btn-tags-sm {
   padding: 10px 18px;
-  background: rgba(81, 146, 255, 0.12);
+  background: rgb(255 81 82 / 12%);
   border-radius: 50px;
   font-size: 14px;
   line-height: 12px;
@@ -971,7 +973,7 @@ h6 {
   width: 21px;
   left: 5px;
   bottom: 5px;
-  background-color: #9777fa;
+  background-color: #d71a21;
   transition: 0.4s;
 }
 
@@ -980,7 +982,7 @@ input:checked + .slider {
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #9777fa;
+  box-shadow: 0 0 1px #d71a21;
 }
 
 input:checked + .slider:before {
@@ -1033,7 +1035,7 @@ span.btn {
 }
 
 .cb-container input:checked ~ .checkmark {
-  border: 2px solid #9777fa;
+  border: 2px solid #d71a21;
 }
 
 .checkmark:after {
@@ -1051,7 +1053,7 @@ span.btn {
   top: -1px;
   width: 21px;
   height: 21px;
-  background: #9777fa url(../imgs/theme/icons/tick.svg) no-repeat center;
+  background: #d71a21 url(../imgs/theme/icons/tick.svg) no-repeat center;
 }
 
 /*COMPONENTS -> FORM*/
@@ -1127,12 +1129,12 @@ textarea:focus {
   padding: 20px 40px;
   color: #ffffff;
   border: none;
-  background-color: #9777fa;
+  background-color: #d71a21;
   border-radius: 10px;
   font-family: "Montserrat", sans-serif;
 }
 .contact-from-area .contact-form-style button:hover {
-  background-color: #7856dd !important;
+  background-color: #d8181f !important;
 }
 
 .form-group {
@@ -1408,7 +1410,7 @@ label {
 }
 
 .noUi-connect {
-  background: #9777fa;
+  background: #d71a21;
   transition: background 450ms;
   height: 6px;
   margin-top: 0px;
@@ -1456,7 +1458,7 @@ label {
   color: #1f2938;
 }
 .card-grid a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 
 .card-shadow {
@@ -1493,7 +1495,7 @@ label {
   color: #1f2938;
 }
 .card-grid-2 a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .card-grid-2 .card-grid-2-image-rd {
   padding: 30px 20px 0px 20px;
@@ -1606,7 +1608,7 @@ label {
 }
 .card-grid-2 .card-block-info .card-2-bottom.card-2-bottom-candidate .btn-brand-hover {
   padding: 15px 33px;
-  border: thin solid rgba(151, 119, 250, 0.5);
+  border: thin solid rgb(250 119 127 / 50%);
   font-size: 14px;
 }
 .card-grid-2 .card-block-info .card-2-bottom.card-2-bottom-candidate .btn-brand-hover:hover {
@@ -1639,7 +1641,7 @@ label {
   padding-bottom: 5px;
 }
 .card-grid-2 .card-block-info .card-profile strong:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .card-grid-2 .card-block-info .card-profile > span {
   color: #88929b;
@@ -1735,7 +1737,7 @@ label {
   color: #1f2938;
 }
 .card-grid-3 h5 a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .card-grid-3 .card-block-info {
   display: inline-block;
@@ -1865,11 +1867,11 @@ label {
   color: #1f2938;
 }
 .list-recent-jobs .card-job .card-job-top--info-heading:hover a {
-  color: #9777fa;
+  color: #d71a21;
 }
 .list-recent-jobs .card-job .card-job-top--info .card-job-top--company {
   font-weight: bold;
-  color: #9777fa;
+  color: #d71a21;
   font-size: 12px;
 }
 .list-recent-jobs .card-job .card-job-top--info .card-job-top--location,
@@ -1887,7 +1889,7 @@ label {
   margin: 2px 5px 0px 0px;
 }
 .list-recent-jobs .card-job .card-job-top--info .card-job-top--price {
-  color: #5192ff;
+  color: #d71a21;
   font-family: "Montserrat", sans-serif;
   font-weight: bold;
   font-size: 22px;
@@ -1913,7 +1915,7 @@ label {
   transition-duration: 0.2s;
 }
 .card-job-bottom a.color-muted:hover {
-  color: #9777fa !important;
+  color: #d71a21 !important;
 }
 
 .card-grid-4 {
@@ -1934,14 +1936,14 @@ label {
   padding: 10px 0px 0px 0px;
 }
 .card-grid-4 .btn-readmore {
-  color: #9777fa;
+  color: #d71a21;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
   font-weight: 400;
   text-decoration: none;
 }
 .card-grid-4 .btn-readmore:hover {
-  color: #7856dd;
+  color: #d8181f;
 }
 .card-grid-4 .btn-readmore.icon-arrow {
   background: url(../imgs/theme/icons/arrow.svg) no-repeat right 0px top 7px;
@@ -1953,7 +1955,7 @@ label {
   background: transparent;
 }
 .card-none-bd .card-info-bottom h3 {
-  color: #9777fa;
+  color: #d71a21;
   margin-bottom: 23px;
 }
 .card-none-bd .card-info-bottom strong {
@@ -1988,7 +1990,7 @@ label {
   text-decoration: none;
 }
 .card-grid-news .card-info-bottom h3 {
-  color: #9777fa;
+  color: #d71a21;
   margin-bottom: 23px;
 }
 .card-grid-news .card-info-bottom h3 span.count {
@@ -2007,7 +2009,7 @@ label {
 }
 .card-grid-news .card-info-bottom ul li {
   list-style: disc;
-  color: #9777fa;
+  color: #d71a21;
   float: left;
   width: 50%;
   padding: 5px 5px 5px 0px;
@@ -2194,14 +2196,14 @@ label {
   transition-duration: 0.2s;
 }
 .nav-right li button:hover {
-  background-color: #9777fa;
+  background-color: #d71a21;
   color: #ffffff;
   transition-duration: 0.2s;
   transform: translateY(-3px);
 }
 .nav-right li button.active {
   color: #ffffff;
-  background-color: #9777fa;
+  background-color: #d71a21;
 }
 
 .job-text-desc {
@@ -2481,7 +2483,7 @@ label {
   text-decoration: none;
 }
 .breadcrumbs li a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .breadcrumbs li:last-child::before {
   color: #88929b;
@@ -2623,7 +2625,7 @@ label {
 }
 .banner-hero .block-banner .form-find .select2 .select2-selection__arrow b {
   display: none !important;
-  background-color: #9777fa;
+  background-color: #d71a21;
 }
 .banner-hero .block-banner .form-find .input-keysearch {
   background: url(../imgs/theme/icons/icon-job.svg) no-repeat left 18px center;
@@ -2752,7 +2754,7 @@ label {
   position: relative;
 }
 .header .main-menu li a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .header .main-menu li a i {
   font-size: 10px;
@@ -2793,7 +2795,7 @@ label {
   top: 50%;
   width: 5px;
   height: 5px;
-  background-color: #9777fa;
+  background-color: #d71a21;
   border-radius: 50%;
   opacity: 0.7;
   transition-duration: 0.2s;
@@ -2824,7 +2826,7 @@ label {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
-  color: #9777fa;
+  color: #d71a21;
   display: inline-block;
   position: relative;
   padding-left: 13px;
@@ -2834,7 +2836,7 @@ label {
 }
 .header .text-link-bd-btom::before {
   content: "";
-  background: #9777fa;
+  background: #d71a21;
   width: 6px;
   height: 6px;
   border-radius: 50%;
@@ -3043,7 +3045,7 @@ label {
   margin-top: -3px;
   width: 5px;
   height: 5px;
-  background-color: #9777fa;
+  background-color: #d71a21;
   border-radius: 50%;
   opacity: 0.7;
   transition-duration: 0.2s;
@@ -3055,7 +3057,7 @@ label {
   padding-bottom: 0;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-menu-wrap nav .mobile-menu li:hover > a {
-  color: #9777fa;
+  color: #d71a21;
   padding-left: 3px;
   transition-duration: 0.2s;
 }
@@ -3082,11 +3084,11 @@ label {
   color: #1f2938;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-header-info-wrap .single-mobile-header-info a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-header-info-wrap .single-mobile-header-info a i {
   font-size: 14px;
-  color: #9777fa;
+  color: #d71a21;
   margin-right: 8px;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-header-info-wrap .single-mobile-header-info .lang-curr-dropdown {
@@ -3110,7 +3112,7 @@ label {
   font-weight: 400;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-header-info-wrap .single-mobile-header-info .lang-curr-dropdown ul li a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .mobile-header-wrapper-style .mobile-header-wrapper-inner .mobile-header-content-area .mobile-header-info-wrap .single-mobile-header-info:hover > a {
   color: #1f2938;
@@ -3260,7 +3262,7 @@ label {
 .mobile-account ul li:hover a {
   padding-left: 3px;
   transition-duration: 0.2s;
-  color: #9777fa;
+  color: #d71a21;
 }
 
 .sidebar-title {
@@ -3318,7 +3320,7 @@ label {
   text-align: center;
 }
 .widget-categories li:hover span.count {
-  background-color: #9777fa;
+  background-color: #d71a21;
   color: #ffffff;
 }
 
@@ -3365,7 +3367,7 @@ label {
   transition-duration: 0.2s;
 }
 .footer .menu-footer li a:hover {
-  color: #9777fa;
+  color: #d71a21;
   transition-duration: 0.2s;
   padding-left: 3px;
 }
@@ -3376,7 +3378,7 @@ label {
   font-size: 14px;
 }
 .footer .footer-bottom strong {
-  color: #9777fa;
+  color: #d71a21;
   font-weight: bold;
 }
 .footer .footer-bottom a {
@@ -3439,7 +3441,7 @@ label {
   border: 0;
   background-color: #fff;
   transition-duration: 0.2s;
-  background-color: #9777fa;
+  background-color: #d71a21;
 }
 #scrollUp i {
   display: block;
@@ -5117,7 +5119,7 @@ label {
   right: -50px;
   height: 84%;
   width: 88%;
-  background: rgba(81, 146, 255, 0.3) url(../imgs/page/about/bg-inner-job.svg) no-repeat;
+  background: rgba(255, 87, 81, 0.3) url(../imgs/page/about/bg-inner-job.svg) no-repeat;
   background-size: cover;
   border-radius: 80px;
   z-index: 0;
@@ -5129,7 +5131,7 @@ label {
   right: 85%;
   height: 39px;
   width: 39px;
-  background: #bee2ae;
+  background: #d2d2d2;
   border-radius: 50%;
   z-index: 0;
 }
@@ -5228,7 +5230,7 @@ label {
 
 /*page pricing*/
 .bg-blue-full {
-  background-color: #ecf4ff;
+  background-color: #f4606047;
   padding: 82px 0px;
 }
 .bg-blue-full .btn-border {
@@ -5310,7 +5312,7 @@ label {
 }
 .block-pricing .most-popular {
   margin-top: -50px;
-  background: #9777fa url(../imgs/theme/bg-featured.svg) no-repeat top right;
+  background: #d71a21 url(../imgs/theme/bg-featured.svg) no-repeat top right;
   background-size: contain;
   border-radius: 26px;
   padding: 20px 30px 44px 30px;
@@ -5327,7 +5329,7 @@ label {
 }
 .block-pricing .most-popular .btn-border {
   font-weight: bold;
-  color: #9777fa;
+  color: #d71a21;
   width: 100%;
   text-align: center;
 }
@@ -5336,7 +5338,7 @@ label {
   text-transform: uppercase;
   padding: 9px 25px 7px 25px;
   font-size: 10px;
-  color: #9777fa;
+  color: #d71a21;
   line-height: 12px;
   font-family: "Montserrat", sans-serif;
 }
@@ -5430,7 +5432,7 @@ label {
   left: 15px;
 }
 .accordion-flush .accordion-button:not(.collapsed) {
-  color: #9777fa;
+  color: #d71a21;
   background-color: transparent;
 }
 .accordion-flush .accordion-button:not(.collapsed)::after {
@@ -5494,7 +5496,7 @@ label {
   color: #1f2938;
 }
 .card-blog-1 h3.post-title a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 .card-blog-1 h3.post-title.small {
   font-size: 18px;
@@ -5634,7 +5636,7 @@ label {
   font-weight: 600;
 }
 .box-head-single .avatar-sidebar .sidebar-website-text {
-  color: #9777fa;
+  color: #d71a21;
 }
 
 .img-rd-15 {
@@ -5766,7 +5768,7 @@ label {
 .sidebar-shadow .sidebar-heading .avatar-sidebar .sidebar-info .sidebar-website-text {
   font-size: 12px;
   line-height: 18px;
-  color: #9777fa;
+  color: #d71a21;
 }
 .sidebar-shadow .sidebar-heading .avatar-sidebar .sidebar-info .dropdown-toggle::after {
   display: none;
@@ -5787,6 +5789,8 @@ label {
   line-height: 24px;
   display: inline-block;
   width: 100%;
+  word-wrap: break-word;
+
 }
 
 .sidebar-team-member {
@@ -5892,7 +5896,7 @@ label {
   text-decoration: none;
 }
 .ul-lists li a:hover {
-  color: #9777fa;
+  color: #d71a21;
 }
 
 .btn-dots-abs-right {
@@ -5924,7 +5928,7 @@ label {
 }
 .job-meta .company {
   font-weight: bold;
-  color: #9777fa;
+  color: #d71a21;
 }
 .job-meta span {
   margin-right: 15px;
@@ -6021,7 +6025,7 @@ label {
   background: rgba(6, 18, 36, 0.1);
 }
 .block-progress-status .item-progress .info-progress .progress .progress-bar {
-  background: #9777fa;
+  background: #d71a21;
   border-radius: 5px;
 }
 
@@ -6143,7 +6147,7 @@ label {
   content: "";
   height: 28px;
   width: 28px;
-  background: #9777fa;
+  background: #d71a21;
   opacity: 0.3;
   border-radius: 8px;
   position: absolute;
@@ -6155,7 +6159,7 @@ label {
   content: "";
   height: 28px;
   width: 28px;
-  background: #9777fa;
+  background: #d71a21;
   opacity: 0.3;
   border-radius: 8px;
   position: absolute;
@@ -6350,8 +6354,8 @@ label {
   font-size: 12px;
   line-height: 16px;
   border-radius: 5px;
-  background: rgba(156, 156, 163, 0.18);
-  color: #9c9ca3;
+  background: #d71a21;
+  color: #ffffff;
 }
 
 .background-primary {
@@ -6438,7 +6442,7 @@ label {
   font-size: 12px;
   font-weight: bold;
   line-height: 14px;
-  color: #9777fa;
+  color: #d71a21;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -6530,7 +6534,7 @@ label {
   color: #1f2938;
 }
 .employers-list .card-employers .employers-name h5:hover a {
-  color: #9777fa;
+  color: #d71a21;
 }
 .employers-list .card-employers .employers-name .rate {
   margin-left: -20px;
@@ -6633,11 +6637,11 @@ label {
 }
 
 .nav-style-homepage-3 li button.active {
-  color: #9777fa;
+  color: #d71a21;
   background: none;
 }
 .nav-style-homepage-3 li button:hover {
-  color: #9777fa;
+  color: #d71a21;
   background: none;
 }
 .nav-style-homepage-3 > li:last-child button {

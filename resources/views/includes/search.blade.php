@@ -30,14 +30,14 @@
         <div class="d-table-cell">
             <div class="container"> 
                 <div class="banner-content text-center">
-                    <p>Find Jobs, Employment & Career Opportunities</p>
-                    <h1>Drop Resume & Get Your Desire Job!</h1>
+                    <p>{{ __('Find Jobs, Employment & Career Opportunities') }}</p>
+                    <h1>{{ __('Drop Resume & Get Your Desire Job!') }}</h1>
 
                     @include('includes.search_form')
 
 
                     <ul class="keyword">
-                        <li>Trending Keywords:</li>
+                        <li>Trending Keywordسشيسشيs:</li>
                         <li><a href="#">Automotive,</a></li>
                         <li><a href="#">Education,</a></li>
                         <li><a href="#">Health</a></li>

@@ -18,7 +18,29 @@
 
 
 <!-- Inner Page Title start --> 
-@include('includes.inner_page_title', ['page_title'=>__('All Categories')])
+{{-- @include('includes.inner_page_title', ['page_title'=>__('All Categories')]) --}}
+
+
+<section class="section-box bg-banner-about banner-home-3 pages blog  pt-3 mb-35">
+    <div class="banner-hero">
+        <div class="banner-inner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="block-banner">
+                        <h3 class="heading-banner text-center wow animate__animated animate__fadeInUp mt-35">
+                            {{ __('All Categories') }}</h3>
+                        
+                        <div class="list-tags-banner mt-3 text-center wow animate__animated animate__fadeInUp">
+                          
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
 
 <!-- Inner Page Title end -->
 
@@ -43,25 +65,32 @@
 
                         @if(isset($functionalAreas) && count($functionalAreas)) 
                         @foreach($functionalAreas as $functionalArea)
-                        @if(null !== $functionalArea)
-                        <li class="col-lg-3 col-6">
-                            <a class="catecard" href="{{route('job.list', ['functional_area_id[]'=>$functionalArea->functional_area_id])}}" title="{{$functionalArea->functional_area}}">
-                                <div class="iconcircle">
-                                @if ($functionalArea->image && file_exists(public_path('uploads/functional_area/' . $functionalArea->image)))
-                                    <img src="{{ asset('uploads/functional_area/' . $functionalArea->image) }}" alt="">
-                                @else
-                                    <!-- Use your dummy image path or URL here -->
-                                    <img src="{{ asset('images/no-image.png') }}" alt="Dummy Image">
-                                @endif
-                                </div>                                   
-                                <div class="catedata">
-                                    <h3>{!! \Illuminate\Support\Str::limit($functionalArea->functional_area, $limit = 20, $end = '...') !!}</h3>
-                                    <div class="badge"><i class="fas fa-briefcase"></i> ({{ $functionalArea->jobs_count }}) {{__('Jobs')}}
-                                    </div>
+                        @if (null !== $functionalArea)
+                        <div class="col-lg-3 col-md-6 col-sm-12 col-12">
+                            <div class="card-grid image-cat hover-up wow animate__animated animate__fadeInUp">
+                                <div class="text-center">
+                                    <a href="{{ route('job.list', ['functional_area_id[]' => $functionalArea->functional_area_id]) }}"
+                                        title="{{ $functionalArea->functional_area }}">
+                                        <figure>
+                                            @if ($functionalArea->image && file_exists(public_path('uploads/functional_area/' . $functionalArea->image)))
+                                                <img src="{{ asset('uploads/functional_area/' . $functionalArea->image) }}"
+                                                    alt="">
+                                            @else
+                                                <img src="{{ asset('images/no-image.png') }}">
+                                            @endif
+                                        </figure>
+                                    </a>
                                 </div>
-                            </a>
-                        </li>
-                        @endif
+                                <h5 class="text-center mt-2 card-heading"><a
+                                        href="{{ route('job.list', ['functional_area_id[]' => $functionalArea->functional_area_id]) }}"
+                                        title="{{ $functionalArea->functional_area }}">{!! \Illuminate\Support\Str::limit($functionalArea->functional_area, $limit = 20, $end = '...') !!}</a>
+                                </h5>
+                                <p class="text-center text-stroke-40 mt-2">
+                                    ({{ $functionalArea->jobs_count }})
+                                    {{ __('Jobs') }}</p>
+                            </div>
+                        </div>
+                    @endif
                         @endforeach
                         @endif
 

@@ -89,18 +89,16 @@
                         <div class="col-lg-8">
                             <div class="block-banner">
                                 <span
-                                    class="text-small-primary text-small-primary--disk text-uppercase wow animate__animated animate__fadeInUp">Best
-                                    jobs place</span>
-                                <h1 class="heading-banner wow animate__animated animate__fadeInUp">Drop Resume & Get Your
-                                    Desire Job!</h1>
+                                    class="text-small-primary text-small-primary--disk text-uppercase wow animate__animated animate__fadeInUp">{{ __('Best jobs place') }}</span>
+                                <h1 class="heading-banner wow animate__animated animate__fadeInUp">{{ __('Drop Resume & Get Your Desire Job!') }}</h1>
                                 <div class="banner-description mt-30 wow animate__animated animate__fadeInUp"
-                                    data-wow-delay=".1s">Find Jobs, Employment & Career Opportunities</div>
+                                    data-wow-delay=".1s">{{ __('Find Jobs, Employment & Career Opportunities') }}</div>
                                 <div class="form-find mt-60 wow animate__animated animate__fadeInUp" data-wow-delay=".2s">
                                     @include('includes.search_form')
                                 </div>
                                 <div class="list-tags-banner mt-60 wow animate__animated animate__fadeInUp"
                                     data-wow-delay=".3s">
-                                    <strong>Trending Keywords:</strong>
+                                    <strong>{{ __('Trending Keywords') }}:</strong>
                                     <a href="#">Automotive</a>, <a href="#">Education</a>, <a
                                         href="#">Health</a>, <a href="#">and</a>, <a href="#">Care
                                         Engineering</a>,
@@ -235,11 +233,10 @@
                         <div class="text-center mt-15">
                             <h3>{{ $jobsCount }}+</h3>
                         </div>
-                        <p class="text-center mt-30 text-stroke-40">Jobs are waiting for you</p>
+                        <p class="text-center mt-30 text-stroke-40">{{ __('Jobs are waiting for you') }}</p>
                         <div class="text-center mt-30">
                             <div class="box-button-shadow"><a href="{{ url('/all-categories') }}"
-                                    class="btn btn-default">Explore
-                                    more</a></div>
+                                    class="btn btn-default">{{ __('View More') }}</a></div>
                         </div>
                     </div>
                 </div>
@@ -356,24 +353,19 @@
                     </div>
                     <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                         <div class="box-info-job pl-3 pt-0 pr-3">
-                            <span class="text-blue wow animate__animated animate__fadeInUp">How It Work</span>
-                            <p> Post a job to tell us about your project. We'll quickly match you with the
-                                right freelancers. </p>
-                            <h5 class="heading-36 mb-2 mt-2 wow animate__animated animate__fadeInUp">Register an account
-                            </h5>
+                            <span class="heading-36 wow animate__animated animate__fadeInUp">{{ __('How It Works') }}</span>
+                            <p>{{ __('Post a job to tell us about your project. Well quickly match you with the right freelancers.') }}</p>
+                            <h4 class="heading-36 mb-2 mt-2 wow animate__animated animate__fadeInUp">{{ __('Register an account') }}</h4>
                             <p class="text-md wow animate__animated animate__fadeInUp">
-                                Due to its widespread use as filler text for layouts, non-readability
-                                is of great importance.
+                                {{ __('Due to its widespread use as filler text for layouts, non-readability is of great importance.') }}
                             </p>
-                            <h5 class="heading-36 mb-2 mt-2 wow animate__animated animate__fadeInUp">Find your job</h5>
+                            <h4 class="heading-36 mb-2 mt-2 wow animate__animated animate__fadeInUp">{{ __('Find your job') }}</h4>
                             <p class="text-md wow animate__animated animate__fadeInUp">
-                                There are many variations of passages of avaibookmark-label, but the majority
-                                alteration in some form.
+                                {{ __('Many jobs are waiting for you') }}
                             </p>
-                            <h5 class="heading-36 mb-2 mt-2 wow animate__animated animate__fadeInUp">Apply for job</h5>
+                            <h4 class="heading-36 mb-2 mt-2 wow animate__animated animate__fadeInUp">{{ __('Apply for job') }}</h4>
                             <p class="text-md wow animate__animated animate__fadeInUp">
-                                It is a long established fact that a reader will be distracted by the
-                                readable content of a page.
+                               {{ __('Apply for jobs with the click of a button') }}
                             </p>
 
                         </div>

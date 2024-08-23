@@ -431,8 +431,8 @@
 
         </div>
         <div class="buttons-filter">
-            <button class="btn btn-default" type="submit">Apply filter</button>
-            <button class="btn" id="reset-filters">Reset filter</button>
+            <button class="btn btn-default" type="submit">{{ __('Apply filter') }}</button>
+            <button class="btn" id="reset-filters">{{ __('Reset filter') }}</button>
         </div>
     </div>
 </div>

@@ -40,18 +40,14 @@
             <div class="col-xl-10 col-lg-12 m-auto">
 
                 <section class="mb-50">
-                    <h5 class="text-blue text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">{{__('We Are Here For Your Help')}}</h5>
-                    <h5 class="text-blue text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">{{__('GET IN TOUCH FAST')}}</h5>
+                    <h5 class="text-black text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">{{__('We Are Here For Your Help')}}</h5>
+                    <h5 class="text-black text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">{{__('GET IN TOUCH FAST')}}</h5>
 
-                    <p class=" w-75 w-md-100 mb-50 mt-15 text-center mx-auto wow animate__animated animate__fadeInUp" data-wow-delay=".1s">{{__('Vestibulum at magna tellus. Vivamus sagittis nunc aliquet. Vivamin orci aliquam')}}<br>
-                        {{__('eros vel saphicula. Donec eget ultricies ipsmconsequat')}}</p>
-           
+        
                     <div class="row">
                         <div class="col-xl-9 col-md-12 mx-auto">
                             <div class="contact-from-area padding-20-row-col">
-                                <h5 class="text-blue text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Send Message</h5>
-                                <h2 class="section-title mt-15 mb-10 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Drop Us a Line</h2>
-                                <p class="text-muted mb-30 font-md text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">Your email address will not be published. Required fields are marked *</p>
+                                <h2 class="section-title mt-15 mb-10 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">{{ __('Send Message') }}</h2>
                                 <div class="row mt-50">
                                     <div class="col-md-4 text-center wow animate__animated animate__fadeInUp" data-wow-delay=".1s">
                                         <img src="{{ asset('new_template/imgs/theme/icons/plane-color.svg') }}" alt="">

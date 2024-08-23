@@ -1,10 +1,25 @@
 @extends('layouts.app')
 @section('content') 
 <!-- Header start --> 
-@include('includes.header') 
+{{-- @include('includes.header')  --}}
 <!-- Header end --> 
 <!-- Inner Page Title start --> 
-@include('includes.inner_page_title', ['page_title'=>__('Apply on Job')]) 
+
+<section class="section-box bg-banner-about banner-home-3 pages blog  pt-3 mb-35">
+    <div class="banner-hero">
+        <div class="banner-inner">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="block-banner">
+                        <h3 class="heading-banner text-center wow animate__animated animate__fadeInUp mt-35">
+                            {{ __('Apply on Job') }}</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Inner Page Title end -->
 <div class="listpgWraper">
     <div class="container"> @include('flash::message')
@@ -40,7 +55,6 @@
         </div>
     </div>
 </div>
-@include('includes.footer')
 @endsection
 @push('scripts') 
 <script>

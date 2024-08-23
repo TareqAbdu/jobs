@@ -11,7 +11,7 @@ class VerifiedMiddleware
     {
         $user = $request->user();
 
-        if ($user instanceof MustVerifyEmail && !$user->hasVerifiedEmail()) {
+        if ($user->hasVerifiedEmail()) {
             return redirect()->route('verification.notice');
         }
 

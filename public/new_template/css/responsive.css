@@ -88,3 +88,9 @@
 
 
 }
+
+@media (max-width: 991.98px) {
+    .block-pricing .most-popular {
+        margin-top: 22px !important;
+    }
+}
